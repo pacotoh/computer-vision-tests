@@ -4,6 +4,7 @@ import time
 
 import matplotlib.pyplot as plt
 
+# TODO: Need to change path and include in the proyect
 CPATH = '/home/pacotoh/anaconda3/share/OpenCV/haarcascades/'
 
 # we have a dictionary with the filters to apply

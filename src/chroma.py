@@ -5,9 +5,9 @@ import numpy as np
 import utils
 
 # global variables
-re = cv.imread('images/chroma/pano002.jpg') # the new background
+re = cv.imread('../images/chroma/pano002.jpg') # the new background
 LIMIT = 65 # mask limit
-BACK_PATH = 'images/chroma/background.png' # path of the chroma bg
+BACK_PATH = '../images/chroma/background.png' # path of the chroma bg
 
 # auxiliar method to apply the mask
 def apply_mask(dif_img, img, dst):
@@ -32,7 +32,7 @@ def chroma_yuv(bg, img, dst):
 
 # chroma in a photo
 def static_chroma(bg, img, dst):
-    cv.imwrite('images/chroma/res.png',chroma_rgb(bg, img, dst))
+    cv.imwrite('../images/chroma/res.png',chroma_rgb(bg, img, dst))
 
 # b takes the chroma's background
 # c starts the chroma's effect

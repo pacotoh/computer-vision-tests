@@ -5,7 +5,7 @@ import os
 
 MAX_BGS = 15000 # number of pixels(x, y)*255 : white
 MAX_FRAMES = 10 # frames to detect the movement
-path = 'images/move_detector/'
+path = '../images/move_detector/'
 
 if not os.path.exists(path):
     os.makedirs(path)

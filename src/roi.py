@@ -24,7 +24,7 @@ class Roi():
 
         #creating the time name value of the session
         time_session = strftime('%d_%m', gmtime())
-        path = 'images/' + time_session + '/'
+        path = '../images/' + time_session + '/'
 
         if not os.path.exists(path + 'save.pkl'):
             img_index = 0

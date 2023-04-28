@@ -13,7 +13,7 @@ def figsize(h=6, v=4):
     pylab.rcParams['figure.figsize'] = h,v
 
 def readrgb(file):
-    return cv.cvtColor( cv.imread("images/chroma/"+file), cv.COLOR_BGR2RGB)
+    return cv.cvtColor( cv.imread("../images/chroma/"+file), cv.COLOR_BGR2RGB)
 
 def rgb2yuv(x):
     return cv.cvtColor(x,cv.COLOR_RGB2YUV)
